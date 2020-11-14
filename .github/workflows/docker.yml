@@ -6,7 +6,7 @@ jobs:
     steps:
     - uses: actions/checkout@master
     - name: Publish to Registry
-      uses: amreeves/publish-docker-aithub-action
+      uses: amreeves/publish-docker-github-action@master
       with:
         name: myDocker/repository
         username: ${{ secrets.DOCKER_USERNAME }}
